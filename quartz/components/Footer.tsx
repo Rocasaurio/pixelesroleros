@@ -15,16 +15,13 @@ export default ((opts?: Options) => {
       <footer class={`${displayClass ?? ""}`}>
         <hr />
         <p>
-          {i18n(cfg.locale).components.footer.createdWith}{" "}
-          <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
+          {"Síguenos en: "}
+          <a href="https://www.instagram.com/rocasaurio_/">Instagram</a> | <a href="https://www.instagram.com/rocasaurio_/">Facebook</a>
         </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
+        <p>
+          {"Creado por "}
+          <a href="https://www.instagram.com/rocasaurio_/">@Rocasaurio_</a> © {year}
+        </p>
       </footer>
     )
   }

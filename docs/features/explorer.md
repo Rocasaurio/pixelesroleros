@@ -1,5 +1,5 @@
 ---
-title: "Explorer"
+title: "Categorías"
 tags:
   - component
 ---
@@ -18,12 +18,12 @@ Display names for folders get determined by the `title` frontmatter field in `fo
 ## Customization
 
 Most configuration can be done by passing in options to `Component.Explorer()`.
-
+x
 For example, here's what the default configuration looks like:
 
 ```typescript title="quartz.layout.ts"
 Component.Explorer({
-  title: "Explorer", // title of the explorer component
+  title: "Categorías", // title of the explorer component
   folderClickBehavior: "collapse", // what happens when you click a folder ("link" to navigate to folder page on click or "collapse" to collapse folder on click)
   folderDefaultState: "collapsed", // default state of folders ("collapsed" or "open")
   useSavedState: true, // whether to use local storage to save "state" (which folders are opened) of explorer
